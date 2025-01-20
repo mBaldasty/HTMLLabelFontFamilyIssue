@@ -5,12 +5,7 @@
         </ActionBar>
 
         <GridLayout>
-            <Label class="info">
-                <FormattedString>
-                    <Span class="fas" text.decode="&#xf135; "/>
-                    <Span :text="message"/>
-                </FormattedString>
-            </Label>
+            <HTMLLabel :html="'This is some html string'" :fontSize="18" fontFamily="AreaNormal-Extrabold"/>
         </GridLayout>
     </Page>
 </template>
