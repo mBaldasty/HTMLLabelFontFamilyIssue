@@ -4,8 +4,9 @@
             <Label text="Home"/>
         </ActionBar>
 
-        <GridLayout>
-            <HTMLLabel :html="'This is some html string'" :fontSize="18" fontFamily="AreaNormal-Extrabold"/>
+        <GridLayout rows="auto, auto">
+            <HTMLLabel row="0" :html="'This is some html string'" :fontSize="18" fontFamily="AreaNormal-Extrabold"/>
+            <Label row="1" :text="'This is some html string'" :fontSize="18" fontFamily="AreaNormal-Extrabold"/>
         </GridLayout>
     </Page>
 </template>
