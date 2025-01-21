@@ -4,10 +4,18 @@
             <Label text="Home"/>
         </ActionBar>
 
-        <GridLayout rows="auto, auto">
-            <HTMLLabel row="0" :html="'This is some html string'" :fontSize="18" fontFamily="AreaNormal-Extrabold"/>
-            <Label row="1" :text="'This is some html string'" :fontSize="18" fontFamily="AreaNormal-Extrabold"/>
-        </GridLayout>
+        <StackLayout>
+          <Label text="OTF"/>
+          <HTMLLabel :html="'This is some html string'" :fontSize="18" fontFamily="AreaNormal-Semibold"/>
+          <HTMLLabel :text="'This is some html string'" :fontSize="20" fontFamily="AreaNormal-Semibold"/>
+          <Label :text="'This is some html string'" :fontSize="20" fontFamily="AreaNormal-Semibold"/>
+
+
+          <Label text="TTF" marginTop="20"/>
+          <HTMLLabel :html="'This is some html string'" :fontSize="18" fontFamily="Heebo-Medium"/>
+          <HTMLLabel :text="'This is some html string'" :fontSize="20" fontFamily="Heebo-Medium"/>
+          <Label :text="'This is some html string'" :fontSize="20" fontFamily="Heebo-Medium"/>
+        </StackLayout>
     </Page>
 </template>
 
