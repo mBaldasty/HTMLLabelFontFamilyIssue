@@ -5,26 +5,27 @@
         </ActionBar>
 
         <StackLayout>
-          <Label text="OTF"/>
-          <HTMLLabel :html="'This is some html string'" :fontSize="18" fontFamily="AreaNormal-Semibold"/>
-          <HTMLLabel :text="'This is some html string'" :fontSize="20" fontFamily="AreaNormal-Semibold"/>
-          <Label :text="'This is some html string'" :fontSize="20" fontFamily="AreaNormal-Semibold"/>
+          <Label text="TTF Area Normal"/>
+          <HTMLLabel :html="'<strong>This</strong> is some html string'" :fontSize="18" fontFamily="Area Normal"/>
+          <HTMLLabel :text="'This is some html string'" :fontSize="20" fontFamily="Area Normal"/>
+          <Label :text="'This is some html string'" :fontSize="20" fontFamily="Area Normal"/>
 
 
-          <Label text="TTF" marginTop="20"/>
-          <HTMLLabel :html="'This is some html string'" :fontSize="18" fontFamily="Heebo-Medium"/>
-          <HTMLLabel :text="'This is some html string'" :fontSize="20" fontFamily="Heebo-Medium"/>
-          <Label :text="'This is some html string'" :fontSize="20" fontFamily="Heebo-Medium"/>
+          <Label text="TT Heebo" marginTop="20"/>
+          <HTMLLabel :html="'<strong>This</strong> is some html string'" :fontSize="18" fontFamily="Heebo"/>
+          <HTMLLabel :text="'This is some html string'" :fontSize="20" fontFamily="Heebo"/>
+          <Label :text="'This is some html string'" :fontSize="20" fontFamily="Heebo"/>
 
-          <Label text="Comic sans TTF" marginTop="20"/>
-          <HTMLLabel :html="'This is some html string'" :fontSize="18" fontFamily="ComicSansMS400"/>
-          <HTMLLabel :text="'This is some html string'" :fontSize="20" fontFamily="ComicSansMS400"/>
-          <Label :text="'This is some html string'" :fontSize="20" fontFamily="ComicSansMS400"/>
+          <Label text="Comic Sans TTF" marginTop="20"/>
+          <HTMLLabel :html="'<strong>This</strong> is some html string'" :fontSize="18" fontFamily="Comic Sans MS"/>
+          <HTMLLabel :text="'This is some html string'" class="comic-sans"/>
+          <Label :text="'This is some html string'" class="comic-sans"/>
 
           <Label text="LuismiMurder400 TTF" marginTop="20"/>
-          <HTMLLabel :html="'This is some html string'" :fontSize="18" fontFamily="LuismiMurder400"/>
-          <HTMLLabel :text="'This is some html string'" :fontSize="20" fontFamily="LuismiMurder400"/>
-          <Label :text="'This is some html string'" :fontSize="20" fontFamily="LuismiMurder400"/>
+          <HTMLLabel :html="'<strong>This</strong> is some html string'" :fontSize="18" fontFamily="Luismi Murder"/>
+          <HTMLLabel :text="'This is some html string'" class="luismi"/>
+          <Label :text="'This is some html string'" class="luismi"/>
+
         </StackLayout>
     </Page>
 </template>
@@ -39,17 +40,5 @@
   };
 </script>
 
-<style scoped lang="scss">
-    @import '@nativescript/theme/scss/variables/blue';
-
-    // Custom styles
-    .fas {
-        @include colorize($color: accent);
-    }
-
-    .info {
-        font-size: 20;
-        horizontal-align: center;
-        vertical-align: center;
-    }
+<style>
 </style>
