@@ -15,6 +15,16 @@
           <HTMLLabel :html="'This is some html string'" :fontSize="18" fontFamily="Heebo-Medium"/>
           <HTMLLabel :text="'This is some html string'" :fontSize="20" fontFamily="Heebo-Medium"/>
           <Label :text="'This is some html string'" :fontSize="20" fontFamily="Heebo-Medium"/>
+
+          <Label text="Comic sans TTF" marginTop="20"/>
+          <HTMLLabel :html="'This is some html string'" :fontSize="18" fontFamily="ComicSansMS400"/>
+          <HTMLLabel :text="'This is some html string'" :fontSize="20" fontFamily="ComicSansMS400"/>
+          <Label :text="'This is some html string'" :fontSize="20" fontFamily="ComicSansMS400"/>
+
+          <Label text="LuismiMurder400 TTF" marginTop="20"/>
+          <HTMLLabel :html="'This is some html string'" :fontSize="18" fontFamily="LuismiMurder400"/>
+          <HTMLLabel :text="'This is some html string'" :fontSize="20" fontFamily="LuismiMurder400"/>
+          <Label :text="'This is some html string'" :fontSize="20" fontFamily="LuismiMurder400"/>
         </StackLayout>
     </Page>
 </template>
